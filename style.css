@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+  min-height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 435px;
+}
+html {
+font-family: 'Red Hat Display', sans-serif;
+font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+p {
+  overflow-wrap: break-word;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  background-color:white;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+.imageSection {
+width: 100%;
+height: 220px;
+background-image: url("images/illustration-hero.svg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+.card img {
+  width: 100%;
+}
+.inner-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+.hold-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 350px;
+height: 100px;
+  width: 90%;
+}
+.hold-items img {
+  width: 20%;
+}
+.annual-plan {
+display: flex;
+flex-direction: column;
+justify-content: center;   
+align-items: center;
+margin-right: auto;
+margin-left: 20px;
+}
+.annual-plan h2 {
+/* font-weight: 900; */
+color: hsl(223, 47%, 23%);
+margin: 0!important;
+padding: 0;
+}
+.annual-plan p {
+/* font-weight: 900; */
+color: hsl(223, 47%, 23%);
+margin: 0!important;
+padding: 0;
+}
+.inner-card .btn {
+  width: 90%;
+  background-color:hsl(245, 75%, 52%);
+  color: white;
+  margin:1rem 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.07), 0 6px 6px rgba(0,0,0,0.1);
+}
+.inner-card .btn-light {
+  background-color:white;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+@media (max-width:480px) {
+  
+    body {
+        min-width: 375px;
+        min-height: 100vh;
+        background-color: hsl(225, 100%, 94%);
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    html {
+        font-size: 0.9rem;
+    }
+
+    .imageSection {
+        height: 160px;
+    }
+}
